@@ -142,7 +142,7 @@ let file = document.querySelectorAll("input[type=file]")[0];
 file.addEventListener("change", function (event) {
     let iframe1 = document.getElementById("secDoc1");
     let iframe2 = document.getElementById("secDoc2");
-    let filename = `answersheet/${this.files.item(0).name}`;
+    let filename = `https://github.com/gitriyad/slcQuestionBank/tree/master/answersheet/${this.files.item(0).name}`;
     iframe1.setAttribute("data", filename);
     iframe2.setAttribute("src", filename);
 
