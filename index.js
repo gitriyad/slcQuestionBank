@@ -140,12 +140,9 @@ function save() {
 
 let file = document.querySelectorAll("input[type=file]")[0];
 file.addEventListener("change", function (event) {
-    console.log(this.files.item(0).name);
     let iframe1 = document.getElementById("secDoc1");
-    let iframe2 = document.getElementById("secDoc2");
-    let filename = `https://github.com/gitriyad/slcQuestionBank/tree/master/answersheet/${this.files.item(0).name}`;
-    iframe1.setAttribute("data", filename);
-    iframe2.setAttribute("src", filename);
+    let filename = `answersheet/${this.files.item(0).name}`;
+    iframe1.setAttribute("src", filename);
 
 });
 
@@ -176,8 +173,5 @@ function ifm() {
     h1.innerHTML = 'Obtained Marks: <font style= "color:red;">' + mark + '</font>';
     document.body.appendChild(h1);
 };
-
-
-
 
 
