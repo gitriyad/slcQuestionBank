@@ -1,0 +1,84 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#btns {
+    display: flex;
+}
+
+.push {
+    margin-left: auto;
+}
+
+#rmvButton {
+    display: none;
+}
+
+#secDoc {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+button,
+input[type=file] {
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+textarea {
+    font-family: DejaVu Sans, Symbola, Quivira, Segoe UI Symbol, UniversaliaPlus;
+}
+
+#sub {
+    font-size: 1rem;
+}
+
+#banner {
+    width: 100%;
+    background-image: linear-gradient(to right, #8080c0, skyblue);
+    margin-bottom: 20px;
+}
+
+#banner>img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 667px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    textarea[name="option[]"] {
+        display: block !important;
+        white-space: nowrap;
+        margin-left: 0 !important;
+    }
+
+    input[type=checkbox] {
+        margin-left: 0 !important;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    #sub {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 80%;
+    }
+}
