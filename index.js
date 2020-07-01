@@ -141,7 +141,7 @@ function save() {
 let file = document.querySelectorAll("input[type=file]")[0];
 file.addEventListener("change", function (event) {
     let iframe = document.getElementById("secDoc");
-    let filename = `answersheet/${this.files.item(0).name}`;
+    let filename = `https://github.com/gitriyad/slcQuestionBank/tree/master/answersheet/${this.files.item(0).name}`;
     iframe.setAttribute("src", filename);
 
 });
